@@ -9,6 +9,10 @@
 <body>
 
 Success! Student conformed: ${student.firstName} ${student.lastName}
+
+<br><br>
+
+Country: ${student.country}
 	
 </body>
 
