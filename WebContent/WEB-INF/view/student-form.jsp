@@ -23,16 +23,23 @@
 		
 		<form:select path="country">
 		
-			<form:option value="Poland" label="Poland"/>
-			<form:option value="Germany" label="Germany"/>
-			<form:option value="Czech Rep" label="Czech Rep"/>
-			<form:option value="Slovakia" label="Slovakia"/>
+			<form:options items="${student.countryOptions}" />
 			
 		</form:select>
 		
 		<br><br>
 		
-		<input type="submit" value="Submit" />	
+		Favourite Language:
+		
+		<form:radiobuttons path="favouriteLanguage"
+		items="${student.favouriteLanguageOptions}"/>
+		
+		<br><br>
+		
+		<input type="submit" value="Submit" />
+		
+		
+			
 	</form:form>
 	
 </body>
